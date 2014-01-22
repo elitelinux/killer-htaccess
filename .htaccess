@@ -60,227 +60,227 @@ RewriteRule .* - [F]
 #RewriteRule \.(gif|jpg)$ http://www.tusitio.com/nomerobeslasimagenesnoseasHP.gif [R,L]
 
 # Bloquar Bots y otras alimañas
-SetEnvIfNoCase User-Agent "Aboundex" bad_bot
-SetEnvIfNoCase User-Agent "80legs" bad_bot
-SetEnvIfNoCase User-Agent "360Spider" bad_bot
-SetEnvIfNoCase User-Agent "^Java" bad_bot
-SetEnvIfNoCase User-Agent "^Cogentbot" bad_bot
-SetEnvIfNoCase User-Agent "^Alexibot" bad_bot
-SetEnvIfNoCase User-Agent "^asterias" bad_bot
-SetEnvIfNoCase User-Agent "^attach" bad_bot
-SetEnvIfNoCase User-Agent "^BackDoorBot" bad_bot
-SetEnvIfNoCase User-Agent "^BackWeb" bad_bot
-SetEnvIfNoCase User-Agent "Bandit" bad_bot
-SetEnvIfNoCase User-Agent "^BatchFTP" bad_bot
-SetEnvIfNoCase User-Agent "^Bigfoot" bad_bot
-SetEnvIfNoCase User-Agent "^Black.Hole" bad_bot
-SetEnvIfNoCase User-Agent "^BlackWidow" bad_bot
-SetEnvIfNoCase User-Agent "^BlowFish" bad_bot
-SetEnvIfNoCase User-Agent "^BotALot" bad_bot
-SetEnvIfNoCase User-Agent "Buddy" bad_bot
-SetEnvIfNoCase User-Agent "^BuiltBotTough" bad_bot
-SetEnvIfNoCase User-Agent "^Bullseye" bad_bot
-SetEnvIfNoCase User-Agent "^BunnySlippers" bad_bot
-SetEnvIfNoCase User-Agent "^Cegbfeieh" bad_bot
-SetEnvIfNoCase User-Agent "^CheeseBot" bad_bot
-SetEnvIfNoCase User-Agent "^CherryPicker" bad_bot
-SetEnvIfNoCase User-Agent "^ChinaClaw" bad_bot
-SetEnvIfNoCase User-Agent "Collector" bad_bot
-SetEnvIfNoCase User-Agent "Copier" bad_bot
-SetEnvIfNoCase User-Agent "^CopyRightCheck" bad_bot
-SetEnvIfNoCase User-Agent "^cosmos" bad_bot
-SetEnvIfNoCase User-Agent "^Crescent" bad_bot
-SetEnvIfNoCase User-Agent "^Custo" bad_bot
-SetEnvIfNoCase User-Agent "^AIBOT" bad_bot
-SetEnvIfNoCase User-Agent "^DISCo" bad_bot
-SetEnvIfNoCase User-Agent "^DIIbot" bad_bot
-SetEnvIfNoCase User-Agent "^DittoSpyder" bad_bot
-SetEnvIfNoCase User-Agent "^Download\ Demon" bad_bot
-SetEnvIfNoCase User-Agent "^Download\ Devil" bad_bot
-SetEnvIfNoCase User-Agent "^Download\ Wonder" bad_bot
-SetEnvIfNoCase User-Agent "^dragonfly" bad_bot
-SetEnvIfNoCase User-Agent "^Drip" bad_bot
-SetEnvIfNoCase User-Agent "^eCatch" bad_bot
-SetEnvIfNoCase User-Agent "^EasyDL" bad_bot
-SetEnvIfNoCase User-Agent "^ebingbong" bad_bot
-SetEnvIfNoCase User-Agent "^EirGrabber" bad_bot
-SetEnvIfNoCase User-Agent "^EmailCollector" bad_bot
-SetEnvIfNoCase User-Agent "^EmailSiphon" bad_bot
-SetEnvIfNoCase User-Agent "^EmailWolf" bad_bot
-SetEnvIfNoCase User-Agent "^EroCrawler" bad_bot
-SetEnvIfNoCase User-Agent "^Exabot" bad_bot
-SetEnvIfNoCase User-Agent "^Express\ WebPictures" bad_bot
-SetEnvIfNoCase User-Agent "Extractor" bad_bot
-SetEnvIfNoCase User-Agent "^EyeNetIE" bad_bot
-SetEnvIfNoCase User-Agent "^Foobot" bad_bot
-SetEnvIfNoCase User-Agent "^flunky" bad_bot
-SetEnvIfNoCase User-Agent "^FrontPage" bad_bot
-SetEnvIfNoCase User-Agent "^Go-Ahead-Got-It" bad_bot
-SetEnvIfNoCase User-Agent "^gotit" bad_bot
-SetEnvIfNoCase User-Agent "^GrabNet" bad_bot
-SetEnvIfNoCase User-Agent "^Grafula" bad_bot
-SetEnvIfNoCase User-Agent "^Harvest" bad_bot
-SetEnvIfNoCase User-Agent "^hloader" bad_bot
-SetEnvIfNoCase User-Agent "^HMView" bad_bot
-SetEnvIfNoCase User-Agent "^HTTrack" bad_bot
-SetEnvIfNoCase User-Agent "^humanlinks" bad_bot
-SetEnvIfNoCase User-Agent "^IlseBot" bad_bot
-SetEnvIfNoCase User-Agent "^Image\ Stripper" bad_bot
-SetEnvIfNoCase User-Agent "^Image\ Sucker" bad_bot
-SetEnvIfNoCase User-Agent "Indy\ Library" bad_bot
-SetEnvIfNoCase User-Agent "^InfoNaviRobot" bad_bot
-SetEnvIfNoCase User-Agent "^InfoTekies" bad_bot
-SetEnvIfNoCase User-Agent "^Intelliseek" bad_bot
-SetEnvIfNoCase User-Agent "^InterGET" bad_bot
-SetEnvIfNoCase User-Agent "^Internet\ Ninja" bad_bot
-SetEnvIfNoCase User-Agent "^Iria" bad_bot
-SetEnvIfNoCase User-Agent "^Jakarta" bad_bot
-SetEnvIfNoCase User-Agent "^JennyBot" bad_bot
-SetEnvIfNoCase User-Agent "^JetCar" bad_bot
-SetEnvIfNoCase User-Agent "^JOC" bad_bot
-SetEnvIfNoCase User-Agent "^JustView" bad_bot
-SetEnvIfNoCase User-Agent "^Jyxobot" bad_bot
-SetEnvIfNoCase User-Agent "^Kenjin.Spider" bad_bot
-SetEnvIfNoCase User-Agent "^Keyword.Density" bad_bot
-SetEnvIfNoCase User-Agent "^larbin" bad_bot
-SetEnvIfNoCase User-Agent "^LexiBot" bad_bot
-SetEnvIfNoCase User-Agent "^lftp" bad_bot
-SetEnvIfNoCase User-Agent "^libWeb/clsHTTP" bad_bot
-SetEnvIfNoCase User-Agent "^likse" bad_bot
-SetEnvIfNoCase User-Agent "^LinkextractorPro" bad_bot
+SetEnvIfNoCase User-Agent "Aboundex" kill
+SetEnvIfNoCase User-Agent "80legs" kill
+SetEnvIfNoCase User-Agent "360Spider" kill
+SetEnvIfNoCase User-Agent "^Java" kill
+SetEnvIfNoCase User-Agent "^Cogentbot" kill
+SetEnvIfNoCase User-Agent "^Alexibot" kill
+SetEnvIfNoCase User-Agent "^asterias" kill
+SetEnvIfNoCase User-Agent "^attach" kill
+SetEnvIfNoCase User-Agent "^BackDoorBot" kill
+SetEnvIfNoCase User-Agent "^BackWeb" kill
+SetEnvIfNoCase User-Agent "Bandit" kill
+SetEnvIfNoCase User-Agent "^BatchFTP" kill
+SetEnvIfNoCase User-Agent "^Bigfoot" kill
+SetEnvIfNoCase User-Agent "^Black.Hole" kill
+SetEnvIfNoCase User-Agent "^BlackWidow" kill
+SetEnvIfNoCase User-Agent "^BlowFish" kill
+SetEnvIfNoCase User-Agent "^BotALot" kill
+SetEnvIfNoCase User-Agent "Buddy" kill
+SetEnvIfNoCase User-Agent "^BuiltBotTough" kill
+SetEnvIfNoCase User-Agent "^Bullseye" kill
+SetEnvIfNoCase User-Agent "^BunnySlippers" kill
+SetEnvIfNoCase User-Agent "^Cegbfeieh" kill
+SetEnvIfNoCase User-Agent "^CheeseBot" kill
+SetEnvIfNoCase User-Agent "^CherryPicker" kill
+SetEnvIfNoCase User-Agent "^ChinaClaw" kill
+SetEnvIfNoCase User-Agent "Collector" kill
+SetEnvIfNoCase User-Agent "Copier" kill
+SetEnvIfNoCase User-Agent "^CopyRightCheck" kill
+SetEnvIfNoCase User-Agent "^cosmos" kill
+SetEnvIfNoCase User-Agent "^Crescent" kill
+SetEnvIfNoCase User-Agent "^Custo" kill
+SetEnvIfNoCase User-Agent "^AIBOT" kill
+SetEnvIfNoCase User-Agent "^DISCo" kill
+SetEnvIfNoCase User-Agent "^DIIbot" kill
+SetEnvIfNoCase User-Agent "^DittoSpyder" kill
+SetEnvIfNoCase User-Agent "^Download\ Demon" kill
+SetEnvIfNoCase User-Agent "^Download\ Devil" kill
+SetEnvIfNoCase User-Agent "^Download\ Wonder" kill
+SetEnvIfNoCase User-Agent "^dragonfly" kill
+SetEnvIfNoCase User-Agent "^Drip" kill
+SetEnvIfNoCase User-Agent "^eCatch" kill
+SetEnvIfNoCase User-Agent "^EasyDL" kill
+SetEnvIfNoCase User-Agent "^ebingbong" kill
+SetEnvIfNoCase User-Agent "^EirGrabber" kill
+SetEnvIfNoCase User-Agent "^EmailCollector" kill
+SetEnvIfNoCase User-Agent "^EmailSiphon" kill
+SetEnvIfNoCase User-Agent "^EmailWolf" kill
+SetEnvIfNoCase User-Agent "^EroCrawler" kill
+SetEnvIfNoCase User-Agent "^Exabot" kill
+SetEnvIfNoCase User-Agent "^Express\ WebPictures" kill
+SetEnvIfNoCase User-Agent "Extractor" kill
+SetEnvIfNoCase User-Agent "^EyeNetIE" kill
+SetEnvIfNoCase User-Agent "^Foobot" kill
+SetEnvIfNoCase User-Agent "^flunky" kill
+SetEnvIfNoCase User-Agent "^FrontPage" kill
+SetEnvIfNoCase User-Agent "^Go-Ahead-Got-It" kill
+SetEnvIfNoCase User-Agent "^gotit" kill
+SetEnvIfNoCase User-Agent "^GrabNet" kill
+SetEnvIfNoCase User-Agent "^Grafula" kill
+SetEnvIfNoCase User-Agent "^Harvest" kill
+SetEnvIfNoCase User-Agent "^hloader" kill
+SetEnvIfNoCase User-Agent "^HMView" kill
+SetEnvIfNoCase User-Agent "^HTTrack" kill
+SetEnvIfNoCase User-Agent "^humanlinks" kill
+SetEnvIfNoCase User-Agent "^IlseBot" kill
+SetEnvIfNoCase User-Agent "^Image\ Stripper" kill
+SetEnvIfNoCase User-Agent "^Image\ Sucker" kill
+SetEnvIfNoCase User-Agent "Indy\ Library" kill
+SetEnvIfNoCase User-Agent "^InfoNaviRobot" kill
+SetEnvIfNoCase User-Agent "^InfoTekies" kill
+SetEnvIfNoCase User-Agent "^Intelliseek" kill
+SetEnvIfNoCase User-Agent "^InterGET" kill
+SetEnvIfNoCase User-Agent "^Internet\ Ninja" kill
+SetEnvIfNoCase User-Agent "^Iria" kill
+SetEnvIfNoCase User-Agent "^Jakarta" kill
+SetEnvIfNoCase User-Agent "^JennyBot" kill
+SetEnvIfNoCase User-Agent "^JetCar" kill
+SetEnvIfNoCase User-Agent "^JOC" kill
+SetEnvIfNoCase User-Agent "^JustView" kill
+SetEnvIfNoCase User-Agent "^Jyxobot" kill
+SetEnvIfNoCase User-Agent "^Kenjin.Spider" kill
+SetEnvIfNoCase User-Agent "^Keyword.Density" kill
+SetEnvIfNoCase User-Agent "^larbin" kill
+SetEnvIfNoCase User-Agent "^LexiBot" kill
+SetEnvIfNoCase User-Agent "^lftp" kill
+SetEnvIfNoCase User-Agent "^libWeb/clsHTTP" kill
+SetEnvIfNoCase User-Agent "^likse" kill
+SetEnvIfNoCase User-Agent "^LinkextractorPro" kill
 SetEnvIfNoCase User-Agent "^LinkScan/8.1a.Unix" bad_bo
-SetEnvIfNoCase User-Agent "^LNSpiderguy" bad_bott
-SetEnvIfNoCase User-Agent "^LinkWalker" bad_bot
-SetEnvIfNoCase User-Agent "^lwp-trivial" bad_bot
-SetEnvIfNoCase User-Agent "^LWP::Simple" bad_bot
-SetEnvIfNoCase User-Agent "^Magnet" bad_bot
-SetEnvIfNoCase User-Agent "^Mag-Net" bad_bot
-SetEnvIfNoCase User-Agent "^MarkWatch" bad_bot
-SetEnvIfNoCase User-Agent "^Mass\ Downloader" bad_bot
-SetEnvIfNoCase User-Agent "^Mata.Hari" bad_bot
-SetEnvIfNoCase User-Agent "^Memo" bad_bot
-SetEnvIfNoCase User-Agent "^Microsoft.URL" bad_bot
-SetEnvIfNoCase User-Agent "^Microsoft\ URL\ Control" bad_bot
-SetEnvIfNoCase User-Agent "^MIDown\ tool" bad_bot
-SetEnvIfNoCase User-Agent "^MIIxpc" bad_bot
-SetEnvIfNoCase User-Agent "^Mirror" bad_bot
-SetEnvIfNoCase User-Agent "^Missigua\ Locator" bad_bot
-SetEnvIfNoCase User-Agent "^Mister\ PiX" bad_bot
-SetEnvIfNoCase User-Agent "^moget" bad_bot
-SetEnvIfNoCase User-Agent "^Mozilla/3.Mozilla/2.01" bad_bot
-SetEnvIfNoCase User-Agent "^Mozilla.*NEWT" bad_bot
-SetEnvIfNoCase User-Agent "^NAMEPROTECT" bad_bot
-SetEnvIfNoCase User-Agent "^Navroad" bad_bot
-SetEnvIfNoCase User-Agent "^NearSite" bad_bot
-SetEnvIfNoCase User-Agent "^NetAnts" bad_bot
-SetEnvIfNoCase User-Agent "^Netcraft" bad_bot
-SetEnvIfNoCase User-Agent "^NetMechanic" bad_bot
-SetEnvIfNoCase User-Agent "^NetSpider" bad_bot
-SetEnvIfNoCase User-Agent "^Net\ Vampire" bad_bot
-SetEnvIfNoCase User-Agent "^NetZIP" bad_bot
-SetEnvIfNoCase User-Agent "^NextGenSearchBot" bad_bot
-SetEnvIfNoCase User-Agent "^NG" bad_bot
-SetEnvIfNoCase User-Agent "^NICErsPRO" bad_bot
-SetEnvIfNoCase User-Agent "^NimbleCrawler" bad_bot
-SetEnvIfNoCase User-Agent "^Ninja" bad_bot
-SetEnvIfNoCase User-Agent "^NPbot" bad_bot
-SetEnvIfNoCase User-Agent "^Octopus" bad_bot
-SetEnvIfNoCase User-Agent "^Offline\ Explorer" bad_bot
-SetEnvIfNoCase User-Agent "^Offline\ Navigator" bad_bot
-SetEnvIfNoCase User-Agent "^Openfind" bad_bot
-SetEnvIfNoCase User-Agent "^OutfoxBot" bad_bot
-SetEnvIfNoCase User-Agent "^PageGrabber" bad_bot
-SetEnvIfNoCase User-Agent "^Papa\ Foto" bad_bot
-SetEnvIfNoCase User-Agent "^pavuk" bad_bot
-SetEnvIfNoCase User-Agent "^pcBrowser" bad_bot
-SetEnvIfNoCase User-Agent "^PHP\ version\ tracker" bad_bot
-SetEnvIfNoCase User-Agent "^Pockey" bad_bot
-SetEnvIfNoCase User-Agent "^ProPowerBot/2.14" bad_bot
-SetEnvIfNoCase User-Agent "^ProWebWalker" bad_bot
-SetEnvIfNoCase User-Agent "^psbot" bad_bot
-SetEnvIfNoCase User-Agent "^Pump" bad_bot
-SetEnvIfNoCase User-Agent "^QueryN.Metasearch" bad_bot
-SetEnvIfNoCase User-Agent "^RealDownload" bad_bot
-SetEnvIfNoCase User-Agent "Reaper" bad_bot
-SetEnvIfNoCase User-Agent "Recorder" bad_bot
-SetEnvIfNoCase User-Agent "^ReGet" bad_bot
-SetEnvIfNoCase User-Agent "^RepoMonkey" bad_bot
-SetEnvIfNoCase User-Agent "^RMA" bad_bot
-SetEnvIfNoCase User-Agent "Siphon" bad_bot
-SetEnvIfNoCase User-Agent "^SiteSnagger" bad_bot
-SetEnvIfNoCase User-Agent "^SlySearch" bad_bot
-SetEnvIfNoCase User-Agent "^SmartDownload" bad_bot
-SetEnvIfNoCase User-Agent "^Snake" bad_bot
-SetEnvIfNoCase User-Agent "^Snapbot" bad_bot
-SetEnvIfNoCase User-Agent "^Snoopy" bad_bot
-SetEnvIfNoCase User-Agent "^sogou" bad_bot
-SetEnvIfNoCase User-Agent "^SpaceBison" bad_bot
-SetEnvIfNoCase User-Agent "^SpankBot" bad_bot
-SetEnvIfNoCase User-Agent "^spanner" bad_bot
-SetEnvIfNoCase User-Agent "^Sqworm" bad_bot
-SetEnvIfNoCase User-Agent "Stripper" bad_bot
-SetEnvIfNoCase User-Agent "Sucker" bad_bot
-SetEnvIfNoCase User-Agent "^SuperBot" bad_bot
-SetEnvIfNoCase User-Agent "^SuperHTTP" bad_bot
-SetEnvIfNoCase User-Agent "^Surfbot" bad_bot
-SetEnvIfNoCase User-Agent "^suzuran" bad_bot
-SetEnvIfNoCase User-Agent "^Szukacz/1.4" bad_bot
-SetEnvIfNoCase User-Agent "^tAkeOut" bad_bot
-SetEnvIfNoCase User-Agent "^Teleport" bad_bot
-SetEnvIfNoCase User-Agent "^Telesoft" bad_bot
-SetEnvIfNoCase User-Agent "^TurnitinBot/1.5" bad_bot
-SetEnvIfNoCase User-Agent "^The.Intraformant" bad_bot
-SetEnvIfNoCase User-Agent "^TheNomad" bad_bot
-SetEnvIfNoCase User-Agent "^TightTwatBot" bad_bot
-SetEnvIfNoCase User-Agent "^Titan" bad_bot
-SetEnvIfNoCase User-Agent "^True_Robot" bad_bot
-SetEnvIfNoCase User-Agent "^turingos" bad_bot
-SetEnvIfNoCase User-Agent "^TurnitinBot" bad_bot
-SetEnvIfNoCase User-Agent "^URLy.Warning" bad_bot
-SetEnvIfNoCase User-Agent "^Vacuum" bad_bot
-SetEnvIfNoCase User-Agent "^VCI" bad_bot
-SetEnvIfNoCase User-Agent "^VoidEYE" bad_bot
-SetEnvIfNoCase User-Agent "^Web\ Image\ Collector" bad_bot
-SetEnvIfNoCase User-Agent "^Web\ Sucker" bad_bot
-SetEnvIfNoCase User-Agent "^WebAuto" bad_bot
-SetEnvIfNoCase User-Agent "^WebBandit" bad_bot
-SetEnvIfNoCase User-Agent "^Webclipping.com" bad_bot
-SetEnvIfNoCase User-Agent "^WebCopier" bad_bot
-SetEnvIfNoCase User-Agent "^WebEMailExtrac.*" bad_bot
-SetEnvIfNoCase User-Agent "^WebEnhancer" bad_bot
-SetEnvIfNoCase User-Agent "^WebFetch" bad_bot
-SetEnvIfNoCase User-Agent "^WebGo\ IS" bad_bot
-SetEnvIfNoCase User-Agent "^Web.Image.Collector" bad_bot
-SetEnvIfNoCase User-Agent "^WebLeacher" bad_bot
-SetEnvIfNoCase User-Agent "^WebmasterWorldForumBot" bad_bot
-SetEnvIfNoCase User-Agent "^WebReaper" bad_bot
-SetEnvIfNoCase User-Agent "^WebSauger" bad_bot
-SetEnvIfNoCase User-Agent "^Website\ eXtractor" bad_bot
-SetEnvIfNoCase User-Agent "^Website\ Quester" bad_bot
-SetEnvIfNoCase User-Agent "^Webster" bad_bot
-SetEnvIfNoCase User-Agent "^WebStripper" bad_bot
-SetEnvIfNoCase User-Agent "^WebWhacker" bad_bot
-SetEnvIfNoCase User-Agent "^WebZIP" bad_bot
-SetEnvIfNoCase User-Agent "Whacker" bad_bot
-SetEnvIfNoCase User-Agent "^Widow" bad_bot
-SetEnvIfNoCase User-Agent "^WISENutbot" bad_bot
-SetEnvIfNoCase User-Agent "^WWWOFFLE" bad_bot
-SetEnvIfNoCase User-Agent "^WWW-Collector-E" bad_bot
-SetEnvIfNoCase User-Agent "^Xaldon" bad_bot
-SetEnvIfNoCase User-Agent "^Xenu" bad_bot
-SetEnvIfNoCase User-Agent "^Zeus" bad_bot
-SetEnvIfNoCase User-Agent "ZmEu" bad_bot
-SetEnvIfNoCase User-Agent "^Zyborg" bad_bot
+SetEnvIfNoCase User-Agent "^LNSpiderguy" killt
+SetEnvIfNoCase User-Agent "^LinkWalker" kill
+SetEnvIfNoCase User-Agent "^lwp-trivial" kill
+SetEnvIfNoCase User-Agent "^LWP::Simple" kill
+SetEnvIfNoCase User-Agent "^Magnet" kill
+SetEnvIfNoCase User-Agent "^Mag-Net" kill
+SetEnvIfNoCase User-Agent "^MarkWatch" kill
+SetEnvIfNoCase User-Agent "^Mass\ Downloader" kill
+SetEnvIfNoCase User-Agent "^Mata.Hari" kill
+SetEnvIfNoCase User-Agent "^Memo" kill
+SetEnvIfNoCase User-Agent "^Microsoft.URL" kill
+SetEnvIfNoCase User-Agent "^Microsoft\ URL\ Control" kill
+SetEnvIfNoCase User-Agent "^MIDown\ tool" kill
+SetEnvIfNoCase User-Agent "^MIIxpc" kill
+SetEnvIfNoCase User-Agent "^Mirror" kill
+SetEnvIfNoCase User-Agent "^Missigua\ Locator" kill
+SetEnvIfNoCase User-Agent "^Mister\ PiX" kill
+SetEnvIfNoCase User-Agent "^moget" kill
+SetEnvIfNoCase User-Agent "^Mozilla/3.Mozilla/2.01" kill
+SetEnvIfNoCase User-Agent "^Mozilla.*NEWT" kill
+SetEnvIfNoCase User-Agent "^NAMEPROTECT" kill
+SetEnvIfNoCase User-Agent "^Navroad" kill
+SetEnvIfNoCase User-Agent "^NearSite" kill
+SetEnvIfNoCase User-Agent "^NetAnts" kill
+SetEnvIfNoCase User-Agent "^Netcraft" kill
+SetEnvIfNoCase User-Agent "^NetMechanic" kill
+SetEnvIfNoCase User-Agent "^NetSpider" kill
+SetEnvIfNoCase User-Agent "^Net\ Vampire" kill
+SetEnvIfNoCase User-Agent "^NetZIP" kill
+SetEnvIfNoCase User-Agent "^NextGenSearchBot" kill
+SetEnvIfNoCase User-Agent "^NG" kill
+SetEnvIfNoCase User-Agent "^NICErsPRO" kill
+SetEnvIfNoCase User-Agent "^NimbleCrawler" kill
+SetEnvIfNoCase User-Agent "^Ninja" kill
+SetEnvIfNoCase User-Agent "^NPbot" kill
+SetEnvIfNoCase User-Agent "^Octopus" kill
+SetEnvIfNoCase User-Agent "^Offline\ Explorer" kill
+SetEnvIfNoCase User-Agent "^Offline\ Navigator" kill
+SetEnvIfNoCase User-Agent "^Openfind" kill
+SetEnvIfNoCase User-Agent "^OutfoxBot" kill
+SetEnvIfNoCase User-Agent "^PageGrabber" kill
+SetEnvIfNoCase User-Agent "^Papa\ Foto" kill
+SetEnvIfNoCase User-Agent "^pavuk" kill
+SetEnvIfNoCase User-Agent "^pcBrowser" kill
+SetEnvIfNoCase User-Agent "^PHP\ version\ tracker" kill
+SetEnvIfNoCase User-Agent "^Pockey" kill
+SetEnvIfNoCase User-Agent "^ProPowerBot/2.14" kill
+SetEnvIfNoCase User-Agent "^ProWebWalker" kill
+SetEnvIfNoCase User-Agent "^psbot" kill
+SetEnvIfNoCase User-Agent "^Pump" kill
+SetEnvIfNoCase User-Agent "^QueryN.Metasearch" kill
+SetEnvIfNoCase User-Agent "^RealDownload" kill
+SetEnvIfNoCase User-Agent "Reaper" kill
+SetEnvIfNoCase User-Agent "Recorder" kill
+SetEnvIfNoCase User-Agent "^ReGet" kill
+SetEnvIfNoCase User-Agent "^RepoMonkey" kill
+SetEnvIfNoCase User-Agent "^RMA" kill
+SetEnvIfNoCase User-Agent "Siphon" kill
+SetEnvIfNoCase User-Agent "^SiteSnagger" kill
+SetEnvIfNoCase User-Agent "^SlySearch" kill
+SetEnvIfNoCase User-Agent "^SmartDownload" kill
+SetEnvIfNoCase User-Agent "^Snake" kill
+SetEnvIfNoCase User-Agent "^Snapbot" kill
+SetEnvIfNoCase User-Agent "^Snoopy" kill
+SetEnvIfNoCase User-Agent "^sogou" kill
+SetEnvIfNoCase User-Agent "^SpaceBison" kill
+SetEnvIfNoCase User-Agent "^SpankBot" kill
+SetEnvIfNoCase User-Agent "^spanner" kill
+SetEnvIfNoCase User-Agent "^Sqworm" kill
+SetEnvIfNoCase User-Agent "Stripper" kill
+SetEnvIfNoCase User-Agent "Sucker" kill
+SetEnvIfNoCase User-Agent "^SuperBot" kill
+SetEnvIfNoCase User-Agent "^SuperHTTP" kill
+SetEnvIfNoCase User-Agent "^Surfbot" kill
+SetEnvIfNoCase User-Agent "^suzuran" kill
+SetEnvIfNoCase User-Agent "^Szukacz/1.4" kill
+SetEnvIfNoCase User-Agent "^tAkeOut" kill
+SetEnvIfNoCase User-Agent "^Teleport" kill
+SetEnvIfNoCase User-Agent "^Telesoft" kill
+SetEnvIfNoCase User-Agent "^TurnitinBot/1.5" kill
+SetEnvIfNoCase User-Agent "^The.Intraformant" kill
+SetEnvIfNoCase User-Agent "^TheNomad" kill
+SetEnvIfNoCase User-Agent "^TightTwatBot" kill
+SetEnvIfNoCase User-Agent "^Titan" kill
+SetEnvIfNoCase User-Agent "^True_Robot" kill
+SetEnvIfNoCase User-Agent "^turingos" kill
+SetEnvIfNoCase User-Agent "^TurnitinBot" kill
+SetEnvIfNoCase User-Agent "^URLy.Warning" kill
+SetEnvIfNoCase User-Agent "^Vacuum" kill
+SetEnvIfNoCase User-Agent "^VCI" kill
+SetEnvIfNoCase User-Agent "^VoidEYE" kill
+SetEnvIfNoCase User-Agent "^Web\ Image\ Collector" kill
+SetEnvIfNoCase User-Agent "^Web\ Sucker" kill
+SetEnvIfNoCase User-Agent "^WebAuto" kill
+SetEnvIfNoCase User-Agent "^WebBandit" kill
+SetEnvIfNoCase User-Agent "^Webclipping.com" kill
+SetEnvIfNoCase User-Agent "^WebCopier" kill
+SetEnvIfNoCase User-Agent "^WebEMailExtrac.*" kill
+SetEnvIfNoCase User-Agent "^WebEnhancer" kill
+SetEnvIfNoCase User-Agent "^WebFetch" kill
+SetEnvIfNoCase User-Agent "^WebGo\ IS" kill
+SetEnvIfNoCase User-Agent "^Web.Image.Collector" kill
+SetEnvIfNoCase User-Agent "^WebLeacher" kill
+SetEnvIfNoCase User-Agent "^WebmasterWorldForumBot" kill
+SetEnvIfNoCase User-Agent "^WebReaper" kill
+SetEnvIfNoCase User-Agent "^WebSauger" kill
+SetEnvIfNoCase User-Agent "^Website\ eXtractor" kill
+SetEnvIfNoCase User-Agent "^Website\ Quester" kill
+SetEnvIfNoCase User-Agent "^Webster" kill
+SetEnvIfNoCase User-Agent "^WebStripper" kill
+SetEnvIfNoCase User-Agent "^WebWhacker" kill
+SetEnvIfNoCase User-Agent "^WebZIP" kill
+SetEnvIfNoCase User-Agent "Whacker" kill
+SetEnvIfNoCase User-Agent "^Widow" kill
+SetEnvIfNoCase User-Agent "^WISENutbot" kill
+SetEnvIfNoCase User-Agent "^WWWOFFLE" kill
+SetEnvIfNoCase User-Agent "^WWW-Collector-E" kill
+SetEnvIfNoCase User-Agent "^Xaldon" kill
+SetEnvIfNoCase User-Agent "^Xenu" kill
+SetEnvIfNoCase User-Agent "^Zeus" kill
+SetEnvIfNoCase User-Agent "ZmEu" kill
+SetEnvIfNoCase User-Agent "^Zyborg" kill
 
 # Bloquear escaneadores de vulnerabilidades
-SetEnvIfNoCase User-Agent "Acunetix" bad_bot
-SetEnvIfNoCase User-Agent "FHscan" bad_bot
+SetEnvIfNoCase User-Agent "Acunetix" kill
+SetEnvIfNoCase User-Agent "FHscan" kill
 
 # Bloquear Motor de Busqueda Chino
-SetEnvIfNoCase User-Agent "Baiduspider" bad_bot
+SetEnvIfNoCase User-Agent "Baiduspider" kill
 
 # Bloquear Motor de Busqueda Ruso
-SetEnvIfNoCase User-Agent "Yandex" bad_bot
+SetEnvIfNoCase User-Agent "Yandex" kill
 
 
 <Limit GET POST HEAD>
@@ -302,6 +302,6 @@ deny from 38.118.42.32/29
 deny from 65.213.208.128/27
 deny from 65.222.176.96/27
 deny from 65.222.185.72/29
-
-Deny from env=bad_bot
+#Kill swicht
+Deny from env=kill
 </Limit>
