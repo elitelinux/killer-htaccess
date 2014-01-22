@@ -9,13 +9,10 @@ Content
 
 Apache htaccess rules to protect from DoS, Sql Injection, XSS and block bad bots.
 
-PROTEC
-------
+PROTECT
+-------
 
-
-
-
-Bad bots are defined as:
+Kill them all!:
 
 - E-mail harvesters
 - Content scrapers
