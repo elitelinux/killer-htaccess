@@ -72,7 +72,21 @@ a standard Apache installation, this should work without any issues.
 Xtras
 -----
 
-Run this cmd in your shell to find malicious scripts in your server
+Run this cmd in your shell to find malicious scripts in your server and security holes:
 
-[$>grep -RPnDskip "(passthru|shell_exec|system|phpinfo|base64_decode|chmod|mkdir|fopen|fclose|readfile) *\(" /var/www/vhosts/myhost.com.co/httpdocs/ >sospechosos.txt]
 
+Find PHP backdoors
+($>grep -RPnDskip "(passthru|shell_exec|system|phpinfo|base64_decode|chmod|mkdir|fopen|fclose|readfile) *\(" /var/www/vhosts/myhost.com.co/httpdocs/ >sospechosos.txt)
+
+
+Find vulnerable files in php
+($>find / -type f -perm +6000 -ls >vulnerables1.txt)
+
+Find PhP Simple Spammers
+($>find /var/www/vhosts/*/httpdocs/ -type f -name "*.php*" | xargs grep -l 'mail' | xargs grep -in 'mail' >resultado.txt)
+
+Fix directories permissions:
+find /path/to/your/app/root/ -type d -exec chmod 755 {} \;
+
+Fix file permissions:
+find /path/to/your/app/root/ -type f -exec chmod 644 {} \;
