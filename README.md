@@ -69,3 +69,10 @@ If you have a bizarre or complicated setup, be sure to look everything
 over before using it. But for anyone with something that resembles
 a standard Apache installation, this should work without any issues.
 
+Xtras
+-----
+
+Run this cmd in your shell to find malicious scripts in your server
+
+[$>grep -RPnDskip "(passthru|shell_exec|system|phpinfo|base64_decode|chmod|mkdir|fopen|fclose|readfile) *\(" /var/www/vhosts/myhost.com.co/httpdocs/ >sospechosos.txt]
+
