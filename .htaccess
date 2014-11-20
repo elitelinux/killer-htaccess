@@ -158,7 +158,7 @@ SetEnvIfNoCase User-Agent "^id-search\.org" kill
 SetEnvIfNoCase User-Agent "^IDBot" kill
 SetEnvIfNoCase User-Agent "^IlseBot" kill
 SetEnvIfNoCase User-Agent "^Image\ Stripper" kill
-SetEnvIfNoCase User-Agent "^Image\ Suck" killer" kill
+SetEnvIfNoCase User-Agent "^Image\ Suck" kill
 SetEnvIfNoCase User-Agent "^Indy\ Library" kill
 SetEnvIfNoCase User-Agent "^InfoNaviRobot" kill
 SetEnvIfNoCase User-Agent "^InfoTekies" kill
