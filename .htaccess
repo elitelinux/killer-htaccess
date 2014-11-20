@@ -340,7 +340,7 @@ SetEnvIfNoCase User-Agent "^Widow" kill
 SetEnvIfNoCase User-Agent "^WISENutbot" kill
 SetEnvIfNoCase User-Agent "^WPScan" kill
 SetEnvIfNoCase User-Agent "^WWW-Mechanize" kill 
-SetEnvIfNoCase User-Agent "^WWWOFFLE" kill" kill
+SetEnvIfNoCase User-Agent "^WWWOFFLE" kill
 SetEnvIfNoCase User-Agent "^WWW-Collector-E" kill
 SetEnvIfNoCase User-Agent "^Xaldon" kill
 SetEnvIfNoCase User-Agent "^Xaldon\ WebSpider" kill
