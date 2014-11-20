@@ -59,6 +59,10 @@ RewriteRule .* - [F]
 #RewriteRule \.(gif|jpg)$ - [F]
 #RewriteRule \.(gif|jpg|png)$ http://other.example.com/image.gif   [R,NC]
 
+#prevent hotlinking except on mobile 
+RewriteCond %{HTTP_USER_AGENT} !(android|ipad|iphone|ipod|kindle) [NC] 
+RewriteRule \.(gif|jpg|swf|mp4|mov|wmv|ogv|webm|png|pdf|bmp)$ - [NC,F,L] 
+
 # Bloquar Bots y otras alimañas
 SetEnvIfNoCase User-Agent "80legs" kill
 SetEnvIfNoCase User-Agent "360Spider" kill
