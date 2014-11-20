@@ -54,55 +54,70 @@ RewriteRule .* - [F]
 
 #Proteger el ancho de banda frente copypasters
 #RewriteCond %{HTTP_REFERER} !^$
-#RewriteCond %{HTTP_REFERER} !^http://(www\.)?tusitio.com/.*$ [NC]
+#RewriteCond %{HTTP_REFERER} !^http://(www\.)?yoursite.com/.*$ [NC]
 #RewriteCond %{HTTP_USER_AGENT} !(googlebot-image|msnbot|psbot|yahoo-mmcrawler|cavalla_bot) [NC]
 #RewriteRule \.(gif|jpg)$ - [F]
-#RewriteRule \.(gif|jpg)$ http://www.tusitio.com/nomerobeslasimagenesnoseasHP.gif [R,L]
+#RewriteRule \.(gif|jpg|png)$ http://other.example.com/image.gif   [R,NC]
 
 # Bloquar Bots y otras alimañas
-SetEnvIfNoCase User-Agent "Aboundex" kill
 SetEnvIfNoCase User-Agent "80legs" kill
 SetEnvIfNoCase User-Agent "360Spider" kill
-SetEnvIfNoCase User-Agent "^Java" kill
-SetEnvIfNoCase User-Agent "^Cogentbot" kill
+SetEnvIfNoCase User-Agent "^Aboundex" kill
+SetEnvIfNoCase User-Agent "^AhrefsBot" kill
+SetEnvIfNoCase User-Agent "^AIBOT" kill
 SetEnvIfNoCase User-Agent "^Alexibot" kill
 SetEnvIfNoCase User-Agent "^asterias" kill
 SetEnvIfNoCase User-Agent "^attach" kill
 SetEnvIfNoCase User-Agent "^BackDoorBot" kill
 SetEnvIfNoCase User-Agent "^BackWeb" kill
-SetEnvIfNoCase User-Agent "Bandit" kill
+SetEnvIfNoCase User-Agent "^Bandit" kill
 SetEnvIfNoCase User-Agent "^BatchFTP" kill
 SetEnvIfNoCase User-Agent "^Bigfoot" kill
+SetEnvIfNoCase User-Agent "^binlar" kill
 SetEnvIfNoCase User-Agent "^Black.Hole" kill
 SetEnvIfNoCase User-Agent "^BlackWidow" kill
 SetEnvIfNoCase User-Agent "^BlowFish" kill
+SetEnvIfNoCase User-Agent "^Bolt\ 0" kill
 SetEnvIfNoCase User-Agent "^BotALot" kill
-SetEnvIfNoCase User-Agent "Buddy" kill
+SetEnvIfNoCase User-Agent "^Bot\ mailto:craftbot\@yahoo\.com" kill
+SetEnvIfNoCase User-Agent "^BOT\ for\ JCE" kill
+SetEnvIfNoCase User-Agent "^Buddy" kill
 SetEnvIfNoCase User-Agent "^BuiltBotTough" kill
 SetEnvIfNoCase User-Agent "^Bullseye" kill
 SetEnvIfNoCase User-Agent "^BunnySlippers" kill
+SetEnvIfNoCase User-Agent "^casper" kill
+SetEnvIfNoCase User-Agent "^CazoodleBot" kill
 SetEnvIfNoCase User-Agent "^Cegbfeieh" kill
 SetEnvIfNoCase User-Agent "^CheeseBot" kill
+SetEnvIfNoCase User-Agent "^checkprivacy" kill
 SetEnvIfNoCase User-Agent "^CherryPicker" kill
 SetEnvIfNoCase User-Agent "^ChinaClaw" kill
-SetEnvIfNoCase User-Agent "Collector" kill
-SetEnvIfNoCase User-Agent "Copier" kill
+SetEnvIfNoCase User-Agent "^clshttp" kill
+SetEnvIfNoCase User-Agent "^cmsworldmap" kill
+SetEnvIfNoCase User-Agent "^Cogentbot" kill
+SetEnvIfNoCase User-Agent "^comodo" kill
+SetEnvIfNoCase User-Agent "^Collector" kill
+SetEnvIfNoCase User-Agent "^Copier" kill
 SetEnvIfNoCase User-Agent "^CopyRightCheck" kill
 SetEnvIfNoCase User-Agent "^cosmos" kill
 SetEnvIfNoCase User-Agent "^Crescent" kill
 SetEnvIfNoCase User-Agent "^Custo" kill
-SetEnvIfNoCase User-Agent "^AIBOT" kill
-SetEnvIfNoCase User-Agent "^DISCo" kill
+SetEnvIfNoCase User-Agent "^Default\ Browser\ 0" kill
+SetEnvIfNoCase User-Agent "^diavol" kill
 SetEnvIfNoCase User-Agent "^DIIbot" kill
+SetEnvIfNoCase User-Agent "^DISCo" kill
+SetEnvIfNoCase User-Agent "^discobot" kill
 SetEnvIfNoCase User-Agent "^DittoSpyder" kill
+SetEnvIfNoCase User-Agent "^dotbot" kill
 SetEnvIfNoCase User-Agent "^Download\ Demon" kill
 SetEnvIfNoCase User-Agent "^Download\ Devil" kill
 SetEnvIfNoCase User-Agent "^Download\ Wonder" kill
 SetEnvIfNoCase User-Agent "^dragonfly" kill
 SetEnvIfNoCase User-Agent "^Drip" kill
-SetEnvIfNoCase User-Agent "^eCatch" kill
 SetEnvIfNoCase User-Agent "^EasyDL" kill
 SetEnvIfNoCase User-Agent "^ebingbong" kill
+SetEnvIfNoCase User-Agent "^eCatch" kill
+SetEnvIfNoCase User-Agent "^ecxi" kill
 SetEnvIfNoCase User-Agent "^EirGrabber" kill
 SetEnvIfNoCase User-Agent "^EmailCollector" kill
 SetEnvIfNoCase User-Agent "^EmailSiphon" kill
@@ -110,65 +125,98 @@ SetEnvIfNoCase User-Agent "^EmailWolf" kill
 SetEnvIfNoCase User-Agent "^EroCrawler" kill
 SetEnvIfNoCase User-Agent "^Exabot" kill
 SetEnvIfNoCase User-Agent "^Express\ WebPictures" kill
-SetEnvIfNoCase User-Agent "Extractor" kill
+SetEnvIfNoCase User-Agent "^Extract" kill
+SetEnvIfNoCase User-Agent "^Extractor" kill
+SetEnvIfNoCase User-Agent "^ExtractorPro" kill
 SetEnvIfNoCase User-Agent "^EyeNetIE" kill
-SetEnvIfNoCase User-Agent "^Foobot" kill
+SetEnvIfNoCase User-Agent "^feedfinder" kill
+SetEnvIfNoCase User-Agent "^FlashGet" kill
+SetEnvIfNoCase User-Agent "^flicky" kill
 SetEnvIfNoCase User-Agent "^flunky" kill
+SetEnvIfNoCase User-Agent "^Foobot" kill
 SetEnvIfNoCase User-Agent "^FrontPage" kill
+SetEnvIfNoCase User-Agent "^g00g1e" kill
+SetEnvIfNoCase User-Agent "^GetRight" kill
+SetEnvIfNoCase User-Agent "^GetWeb!" kill
 SetEnvIfNoCase User-Agent "^Go-Ahead-Got-It" kill
 SetEnvIfNoCase User-Agent "^gotit" kill
+SetEnvIfNoCase User-Agent "^Go!Zilla" kill
+SetEnvIfNoCase User-Agent "^grab" kill
 SetEnvIfNoCase User-Agent "^GrabNet" kill
 SetEnvIfNoCase User-Agent "^Grafula" kill
-SetEnvIfNoCase User-Agent "^Harvest" kill
+SetEnvIfNoCase User-Agent "^GT::WWW" kill
+SetEnvIfNoCase User-Agent "^[Hh]arvest" kill
+SetEnvIfNoCase User-Agent "^heritrix" kill
 SetEnvIfNoCase User-Agent "^hloader" kill
 SetEnvIfNoCase User-Agent "^HMView" kill
+SetEnvIfNoCase User-Agent "^HTTP::Lite" kill
 SetEnvIfNoCase User-Agent "^HTTrack" kill
 SetEnvIfNoCase User-Agent "^humanlinks" kill
+SetEnvIfNoCase User-Agent "^ia_archiver" kill
+SetEnvIfNoCase User-Agent "^id-search" kill
+SetEnvIfNoCase User-Agent "^id-search\.org" kill
+SetEnvIfNoCase User-Agent "^IDBot" kill
 SetEnvIfNoCase User-Agent "^IlseBot" kill
 SetEnvIfNoCase User-Agent "^Image\ Stripper" kill
-SetEnvIfNoCase User-Agent "^Image\ Sucker" kill
-SetEnvIfNoCase User-Agent "Indy\ Library" kill
+SetEnvIfNoCase User-Agent "^Image\ Suck" killer" kill
+SetEnvIfNoCase User-Agent "^Indy\ Library" kill
 SetEnvIfNoCase User-Agent "^InfoNaviRobot" kill
 SetEnvIfNoCase User-Agent "^InfoTekies" kill
 SetEnvIfNoCase User-Agent "^Intelliseek" kill
 SetEnvIfNoCase User-Agent "^InterGET" kill
 SetEnvIfNoCase User-Agent "^Internet\ Ninja" kill
+SetEnvIfNoCase User-Agent "^InternetSeer\.com" kill
 SetEnvIfNoCase User-Agent "^Iria" kill
+SetEnvIfNoCase User-Agent "^IRLbot" kill
+SetEnvIfNoCase User-Agent "^ISC\ Systems\ iRc\ Search\ 2\.1" kill
 SetEnvIfNoCase User-Agent "^Jakarta" kill
+SetEnvIfNoCase User-Agent "^Java" kill
 SetEnvIfNoCase User-Agent "^JennyBot" kill
 SetEnvIfNoCase User-Agent "^JetCar" kill
 SetEnvIfNoCase User-Agent "^JOC" kill
+SetEnvIfNoCase User-Agent "^JOC\ Web\ Spider" kill
 SetEnvIfNoCase User-Agent "^JustView" kill
 SetEnvIfNoCase User-Agent "^Jyxobot" kill
+SetEnvIfNoCase User-Agent "^kanagawa" kill
 SetEnvIfNoCase User-Agent "^Kenjin.Spider" kill
 SetEnvIfNoCase User-Agent "^Keyword.Density" kill
+SetEnvIfNoCase User-Agent "^kmccrew" kill
 SetEnvIfNoCase User-Agent "^larbin" kill
+SetEnvIfNoCase User-Agent "^LeechFTP" kill
 SetEnvIfNoCase User-Agent "^LexiBot" kill
 SetEnvIfNoCase User-Agent "^lftp" kill
 SetEnvIfNoCase User-Agent "^libWeb/clsHTTP" kill
+SetEnvIfNoCase User-Agent "^libwww" kill
 SetEnvIfNoCase User-Agent "^likse" kill
 SetEnvIfNoCase User-Agent "^LinkextractorPro" kill
-SetEnvIfNoCase User-Agent "^LinkScan/8.1a.Unix" bad_bo
-SetEnvIfNoCase User-Agent "^LNSpiderguy" killt
+SetEnvIfNoCase User-Agent "^LinkScan/8.1a.Unix" kill
+SetEnvIfNoCase User-Agent "^inksManager.com_bot" kill
 SetEnvIfNoCase User-Agent "^LinkWalker" kill
+SetEnvIfNoCase User-Agent "^LNSpiderguy" kill
 SetEnvIfNoCase User-Agent "^lwp-trivial" kill
 SetEnvIfNoCase User-Agent "^LWP::Simple" kill
+SetEnvIfNoCase User-Agent "^MFC_Tear_Sample" kill
 SetEnvIfNoCase User-Agent "^Magnet" kill
 SetEnvIfNoCase User-Agent "^Mag-Net" kill
 SetEnvIfNoCase User-Agent "^MarkWatch" kill
 SetEnvIfNoCase User-Agent "^Mass\ Downloader" kill
 SetEnvIfNoCase User-Agent "^Mata.Hari" kill
+SetEnvIfNoCase User-Agent "^Maxthon$" kill
 SetEnvIfNoCase User-Agent "^Memo" kill
 SetEnvIfNoCase User-Agent "^Microsoft.URL" kill
 SetEnvIfNoCase User-Agent "^Microsoft\ URL\ Control" kill
 SetEnvIfNoCase User-Agent "^MIDown\ tool" kill
 SetEnvIfNoCase User-Agent "^MIIxpc" kill
+SetEnvIfNoCase User-Agent "^miner" kill
+SetEnvIfNoCase User-Agent "^MJ12bot" kill
 SetEnvIfNoCase User-Agent "^Mirror" kill
 SetEnvIfNoCase User-Agent "^Missigua\ Locator" kill
 SetEnvIfNoCase User-Agent "^Mister\ PiX" kill
 SetEnvIfNoCase User-Agent "^moget" kill
 SetEnvIfNoCase User-Agent "^Mozilla/3.Mozilla/2.01" kill
+SetEnvIfNoCase User-Agent "^Mozilla\.*Indy" kill
 SetEnvIfNoCase User-Agent "^Mozilla.*NEWT" kill
+SetEnvIfNoCase User-Agent "^MSFrontPage" kill
 SetEnvIfNoCase User-Agent "^NAMEPROTECT" kill
 SetEnvIfNoCase User-Agent "^Navroad" kill
 SetEnvIfNoCase User-Agent "^NearSite" kill
@@ -184,30 +232,44 @@ SetEnvIfNoCase User-Agent "^NICErsPRO" kill
 SetEnvIfNoCase User-Agent "^NimbleCrawler" kill
 SetEnvIfNoCase User-Agent "^Ninja" kill
 SetEnvIfNoCase User-Agent "^NPbot" kill
+SetEnvIfNoCase User-Agent "^nutch" kill
 SetEnvIfNoCase User-Agent "^Octopus" kill
 SetEnvIfNoCase User-Agent "^Offline\ Explorer" kill
 SetEnvIfNoCase User-Agent "^Offline\ Navigator" kill
 SetEnvIfNoCase User-Agent "^Openfind" kill
 SetEnvIfNoCase User-Agent "^OutfoxBot" kill
 SetEnvIfNoCase User-Agent "^PageGrabber" kill
+SetEnvIfNoCase User-Agent "^panscient.com" kill
 SetEnvIfNoCase User-Agent "^Papa\ Foto" kill
 SetEnvIfNoCase User-Agent "^pavuk" kill
 SetEnvIfNoCase User-Agent "^pcBrowser" kill
+SetEnvIfNoCase User-Agent "^PECL::HTTP" kill
+SetEnvIfNoCase User-Agent "^PeoplePal" kill
 SetEnvIfNoCase User-Agent "^PHP\ version\ tracker" kill
+SetEnvIfNoCase User-Agent "^PHPCrawl" kill
+SetEnvIfNoCase User-Agent "^planetwork" kill
+SetEnvIfNoCase User-Agent "^PleaseCrawl" kill
 SetEnvIfNoCase User-Agent "^Pockey" kill
 SetEnvIfNoCase User-Agent "^ProPowerBot/2.14" kill
 SetEnvIfNoCase User-Agent "^ProWebWalker" kill
 SetEnvIfNoCase User-Agent "^psbot" kill
+SetEnvIfNoCase User-Agent "^purebot" kill
 SetEnvIfNoCase User-Agent "^Pump" kill
+SetEnvIfNoCase User-Agent "^pycurl" kill
 SetEnvIfNoCase User-Agent "^QueryN.Metasearch" kill
 SetEnvIfNoCase User-Agent "^RealDownload" kill
-SetEnvIfNoCase User-Agent "Reaper" kill
-SetEnvIfNoCase User-Agent "Recorder" kill
+SetEnvIfNoCase User-Agent "^Reaper" kill
+SetEnvIfNoCase User-Agent "^Recorder" kill
 SetEnvIfNoCase User-Agent "^ReGet" kill
 SetEnvIfNoCase User-Agent "^RepoMonkey" kill
+SetEnvIfNoCase User-Agent "^Rippers\ 0" kill
 SetEnvIfNoCase User-Agent "^RMA" kill
-SetEnvIfNoCase User-Agent "Siphon" kill
+SetEnvIfNoCase User-Agent "^SBIder" kill
+SetEnvIfNoCase User-Agent "^SeaMonkey$" kill
+SetEnvIfNoCase User-Agent "^Siphon" kill
+SetEnvIfNoCase User-Agent "^sitecheck\.internetseer\.com" kill
 SetEnvIfNoCase User-Agent "^SiteSnagger" kill
+SetEnvIfNoCase User-Agent "^skygrid" kill
 SetEnvIfNoCase User-Agent "^SlySearch" kill
 SetEnvIfNoCase User-Agent "^SmartDownload" kill
 SetEnvIfNoCase User-Agent "^Snake" kill
@@ -218,8 +280,9 @@ SetEnvIfNoCase User-Agent "^SpaceBison" kill
 SetEnvIfNoCase User-Agent "^SpankBot" kill
 SetEnvIfNoCase User-Agent "^spanner" kill
 SetEnvIfNoCase User-Agent "^Sqworm" kill
-SetEnvIfNoCase User-Agent "Stripper" kill
-SetEnvIfNoCase User-Agent "Sucker" kill
+SetEnvIfNoCase User-Agent "^Steeler" kill
+SetEnvIfNoCase User-Agent "^Stripper" kill
+SetEnvIfNoCase User-Agent "^[Ss]ucker" kill
 SetEnvIfNoCase User-Agent "^SuperBot" kill
 SetEnvIfNoCase User-Agent "^SuperHTTP" kill
 SetEnvIfNoCase User-Agent "^Surfbot" kill
@@ -227,24 +290,32 @@ SetEnvIfNoCase User-Agent "^suzuran" kill
 SetEnvIfNoCase User-Agent "^Szukacz/1.4" kill
 SetEnvIfNoCase User-Agent "^tAkeOut" kill
 SetEnvIfNoCase User-Agent "^Teleport" kill
+SetEnvIfNoCase User-Agent "^Teleport\ Pro" kill
 SetEnvIfNoCase User-Agent "^Telesoft" kill
-SetEnvIfNoCase User-Agent "^TurnitinBot/1.5" kill
 SetEnvIfNoCase User-Agent "^The.Intraformant" kill
 SetEnvIfNoCase User-Agent "^TheNomad" kill
 SetEnvIfNoCase User-Agent "^TightTwatBot" kill
 SetEnvIfNoCase User-Agent "^Titan" kill
+SetEnvIfNoCase User-Agent "^Toata\ dragostea\ mea\ pentru\ diavola" kill
 SetEnvIfNoCase User-Agent "^True_Robot" kill
 SetEnvIfNoCase User-Agent "^turingos" kill
+SetEnvIfNoCase User-Agent "^turnit" kill
 SetEnvIfNoCase User-Agent "^TurnitinBot" kill
+SetEnvIfNoCase User-Agent "^TurnitinBot/1.5" kill
+SetEnvIfNoCase User-Agent "^URI::Fetch" kill
+SetEnvIfNoCase User-Agent "^urllib" kill
 SetEnvIfNoCase User-Agent "^URLy.Warning" kill
 SetEnvIfNoCase User-Agent "^Vacuum" kill
 SetEnvIfNoCase User-Agent "^VCI" kill
+SetEnvIfNoCase User-Agent "^vikspider" kill
 SetEnvIfNoCase User-Agent "^VoidEYE" kill
+SetEnvIfNoCase User-Agent "^webalta" kill
 SetEnvIfNoCase User-Agent "^Web\ Image\ Collector" kill
 SetEnvIfNoCase User-Agent "^Web\ Sucker" kill
 SetEnvIfNoCase User-Agent "^WebAuto" kill
-SetEnvIfNoCase User-Agent "^WebBandit" kill
+SetEnvIfNoCase User-Agent "^[Ww]eb[Bb]andit" kill
 SetEnvIfNoCase User-Agent "^Webclipping.com" kill
+SetEnvIfNoCase User-Agent "^WebCollage" kill
 SetEnvIfNoCase User-Agent "^WebCopier" kill
 SetEnvIfNoCase User-Agent "^WebEMailExtrac.*" kill
 SetEnvIfNoCase User-Agent "^WebEnhancer" kill
@@ -261,26 +332,36 @@ SetEnvIfNoCase User-Agent "^Webster" kill
 SetEnvIfNoCase User-Agent "^WebStripper" kill
 SetEnvIfNoCase User-Agent "^WebWhacker" kill
 SetEnvIfNoCase User-Agent "^WebZIP" kill
-SetEnvIfNoCase User-Agent "Whacker" kill
+SetEnvIfNoCase User-Agent "^Wells\ Search\ II" kill
+SetEnvIfNoCase User-Agent "^WEP\ Search" kill
+SetEnvIfNoCase User-Agent "^Wget" kill
+SetEnvIfNoCase User-Agent "^Whacker" kill
 SetEnvIfNoCase User-Agent "^Widow" kill
 SetEnvIfNoCase User-Agent "^WISENutbot" kill
-SetEnvIfNoCase User-Agent "^WWWOFFLE" kill
+SetEnvIfNoCase User-Agent "^WPScan" kill
+SetEnvIfNoCase User-Agent "^WWW-Mechanize" kill 
+SetEnvIfNoCase User-Agent "^WWWOFFLE" kill" kill
 SetEnvIfNoCase User-Agent "^WWW-Collector-E" kill
 SetEnvIfNoCase User-Agent "^Xaldon" kill
+SetEnvIfNoCase User-Agent "^Xaldon\ WebSpider" kill
 SetEnvIfNoCase User-Agent "^Xenu" kill
+SetEnvIfNoCase User-Agent "^zermelo" kill
 SetEnvIfNoCase User-Agent "^Zeus" kill
-SetEnvIfNoCase User-Agent "ZmEu" kill
+SetEnvIfNoCase User-Agent "^[Zz]mEu" kill
 SetEnvIfNoCase User-Agent "^Zyborg" kill
-
 # Bloquear escaneadores de vulnerabilidades
-SetEnvIfNoCase User-Agent "Acunetix" kill
-SetEnvIfNoCase User-Agent "FHscan" kill
-
+SetEnvIfNoCase User-Agent "^Acunetix" kill
+SetEnvIfNoCase User-Agent "^FHscan" kill
+SetEnvIfNoCase User-Agent "^[Jj]Joom[Ss]can" kill
 # Bloquear Motor de Busqueda Chino
-SetEnvIfNoCase User-Agent "Baiduspider" kill
-
+SetEnvIfNoCase User-Agent "^Baiduspider" kill
 # Bloquear Motor de Busqueda Ruso
-SetEnvIfNoCase User-Agent "Yandex" kill
+SetEnvIfNoCase User-Agent "^Yandex" kill
+#RewriteRule ^.* - [F,L]
+# Abuse HTTP Referrer Blocking
+RewriteCond %{HTTP_REFERER} ^([^.]+.)*?semalt.com [NC, OR]
+RewriteCond %{HTTP_REFERER} ^([^.]+.)*?kambasoft.com [NC, OR]
+RewriteCond %{HTTP_REFERER} ^([^.]+.)*?savetubevideo.com [NC, OR]
 
 <Limit GET POST HEAD>
 Order Allow,Deny
