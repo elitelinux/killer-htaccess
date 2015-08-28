@@ -1,11 +1,8 @@
-#deshabilitar la firma del servidor ejemplo: apache 2 mod_security, mod_python etc.
-ServerSignature Off
-
-#firmemos nuestro servidor
-DefaultLanguage es-ES
-#configuremos el horario que necesitamos
-SetEnv TZ America/Bogota
-
+#Restringir el acceso en caso de emergencia
+#order deny,allow
+#deny from all
+#emergencia
+#allow from #allow from $MIIP
 #Nadie ve el htaccess
 <files .htaccess>
 order allow,deny
@@ -13,19 +10,35 @@ deny from all
 allow from 127.0.0.1
 #allow from $MIIP
 </files>
-
-# Habilitar para todos los index
-Options All -Indexes
-
 #Habilitar Moto de Escritura
 RewriteEngine on
-
 #Habilitar Links Simbolicos
 Options +FollowSymLinks  
-
 # Protegerse contra los ataques DOS limitando el tamaño de 
 # subida de archivos a 10 megas en este caso 10240000 bytes
 LimitRequestBody 10240000
+#no permitir acceso a archivos del servidor
+<FilesMatch "(\.(ini|engine|inc|info|install|module|profile|po|sh|.*sql|theme|tpl(\.php)?|xtmpl)|code-style\.pl|Entries.*|Repository|Root|Tag|Template)$">
+  Order allow,deny
+</FilesMatch>
+#deshabilitar la firma del servidor ejemplo: apache 2 mod_security, mod_python etc.
+ServerSignature Off
+#firmemos nuestro servidor
+DefaultLanguage es-ES
+#configuremos el horario que necesitamos
+SetEnv TZ America/Bogota
+#por si se requiere funcionalidades
+#<IfModule mod_php5.c>
+#php_extension_dir <ruta_a_la_extension>
+#php_extension mbstring.so
+#php_extension openssl.so
+#php_extension libcurl.so
+#php_extension curl.so
+php_extension php_xmlrpc.so
+#</IfModule>
+# Habilitar para todos los index
+#Options All -Indexes
+#poner en cada carpeta sin archivos un arhivo index.html vacio con permisos r--r--r-- o 0444
 
 #Protección Contra Ataques SQL Injection en aplicaciones web
 
@@ -163,6 +176,7 @@ SetEnvIfNoCase User-Agent "^IDBot" kill
 SetEnvIfNoCase User-Agent "^IlseBot" kill
 SetEnvIfNoCase User-Agent "^Image\ Stripper" kill
 SetEnvIfNoCase User-Agent "^Image\ Suck" kill
+SetEnvIfNoCase User-Agent "^Image\ Sucker" kill
 SetEnvIfNoCase User-Agent "^Indy\ Library" kill
 SetEnvIfNoCase User-Agent "^InfoNaviRobot" kill
 SetEnvIfNoCase User-Agent "^InfoTekies" kill
